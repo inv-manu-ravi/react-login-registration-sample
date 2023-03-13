@@ -1,15 +1,16 @@
-import logo from './logo.svg';
-import React from 'react';
-import './App.css';
-import { Register } from './Register';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './login';
+import { Register } from './Register';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Register></Register> */}
-    <Login></Login>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Register/>} />
+      </Routes>
+    </Router>
   );
 }
 

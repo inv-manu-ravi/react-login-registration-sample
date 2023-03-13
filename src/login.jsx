@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "./Register.css";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -112,6 +113,7 @@ const Login = () => {
         <button type="submit">
           Login
         </button>
+        <p>Doesn't have an account? <Link to="/register" class="link">Register</Link></p>
       </form>
       
       <ToastContainer /> 

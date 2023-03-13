@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Register.css";
 import { ToastContainer } from "react-toastify";
+import { Link } from 'react-router-dom';
 
 export const Register = () => {
   const [name, setName] = useState("");
@@ -125,6 +126,7 @@ export const Register = () => {
         <button type="submit">
           Register
         </button>
+        <p>Already have an account? <Link to="/login" class="link">Log in</Link></p>
       </form>
       
       <ToastContainer /> {/* Add this line */}

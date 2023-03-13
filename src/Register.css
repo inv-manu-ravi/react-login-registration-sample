@@ -45,4 +45,7 @@ form {
   .error {
     color: red;
   }
-  
+.link{
+    text-decoration: none;
+    color: rgb(12, 77, 102);
+  }
